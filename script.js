@@ -2,7 +2,7 @@ async function getDestinationData() {
   try {
     const response = await fetch("./data.json");
     const data = await response.json();
-
+    // get the innerHTML of active planet link
     const activePlanet = document.querySelector(
       ".planet-list-link.active"
     ).innerHTML;
